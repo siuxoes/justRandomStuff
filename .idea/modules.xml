@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hacker/Hacker.iml" filepath="$PROJECT_DIR$/Hacker/Hacker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/URI/URI.iml" filepath="$PROJECT_DIR$/URI/URI.iml" />
       <module fileurl="file://$PROJECT_DIR$/justRandomStuff.iml" filepath="$PROJECT_DIR$/justRandomStuff.iml" />
     </modules>
   </component>
