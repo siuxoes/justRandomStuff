@@ -18,8 +18,6 @@ public class Main {
         String line;
         while ((line = buffer.readLine()) != null) {
             line = line.trim();
-            String orig[] = { "a", "b", "b", "c" };
-            String act[] = { "x", "b", "b", "y" };
             List<String> origList = new ArrayList(Arrays.asList(line.split(";")[0].split(",")));
             List<String> actList = new ArrayList(Arrays.asList(line.split(";")[1].split(",")));
             origList.retainAll(actList);
