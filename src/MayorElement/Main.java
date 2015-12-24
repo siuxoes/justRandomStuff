@@ -11,10 +11,10 @@ import java.util.*;
  */
 public class Main {
 
-    private Set<String> mySet;
-    private Map<String, Integer> dic;
+    private static Set<String> mySet;
+    private static Map<String, Integer> dic;
 
-    public int input(String s) {
+    public static int input(String s) {
         String[] someArray = s.split(",");
         mySet = new HashSet<>(Arrays.asList(someArray));
         dic = new HashMap<>();
@@ -28,16 +28,15 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        Main m = new Main();
-        File file = new File(args[0]);
+        File file = new File("C:\\1.txt");
         BufferedReader buffer = new BufferedReader(new FileReader(file));
         String line;
         while ((line = buffer.readLine()) != null) {
             line = line.trim();
             if(line.length() != 0){
-                int longitud = m.input(line);
+                int longitud = input(line);
                 boolean cond = false;
-                for(Map.Entry<String, Integer> entry: m.dic.entrySet()) {
+                for(Map.Entry<String, Integer> entry: dic.entrySet()) {
                     String key = entry.getKey();
                     Integer value = entry.getValue();
                     if(value > (int)(longitud / 2)){
@@ -51,7 +50,5 @@ public class Main {
                 }
             }
         }
-
     }
-
 }
